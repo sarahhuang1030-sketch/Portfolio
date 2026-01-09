@@ -1,0 +1,34 @@
+.typewriter {
+  --chars: 20;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typingLoop 2.5s steps(20, end) infinite;
+}
+
+
+@keyframes typingLoop {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: calc(var(--chars) * 1ch); /* fully typed */
+  }
+  60% {
+    width: calc(var(--chars) * 1ch); /* pause */
+  }
+  100% {
+    width: 0; /* erase */
+  }
+}
+
+.cursor {
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
