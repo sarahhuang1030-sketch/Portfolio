@@ -23,35 +23,63 @@ import Image from 'next/image';
       title: 'Travel Expert Dashboard',
       description: 'Using C# and ASP.NET, this web application provides travel experts with tools to manage bookings, customer data, and itineraries efficiently.',
       tech: ['C#', 'Azure', 'SQL Server', 'ASP.NET'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/sarahhuang1030-sketch/TravelExperts-UserControl.git',
+      live: null,
       year: '2025'
     },
     {
       id: 2,
-      title: 'Travel Expert Web App',
+      title: 'Travel Expert Web App v1.0',
       description: 'Web application that allow users to plan and book personalized travel itineraries seamlessly',
       tech: ['React', 'Node.js', 'MySQL', 'Javascript'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/sarahhuang1030-sketch/ThreadProjectV3.git',
+      live: 'https://travel-expert-website.onrender.com',
       year: '2025'
     },
-    {
+     {
       id: 3,
+      title: 'Travel Expert Web App v2.0 (Team Project)',
+      description: 'Web application that allow users to plan and book personalized travel itineraries seamlessly',
+      tech: ['React', 'Node.js', 'MySQL', 'Javascript'],
+      github: 'https://github.com/sarahhuang1030-sketch/ThreadProjectV3.git',
+      live: 'https://travel-expert-website.onrender.com',
+      year: '2025'
+    },
+     {
+      id: 4,
       title: 'Health Analytics Platform',
-      description: 'A full-stack analytics platform built with React and Node.js, enabling healthcare providers to visualize patient data and track health metrics seamlessly.',
+      description: 'A full-stack analytics platform built with React and Node.js, enabling healthcare providers to visualize patient data and track health metrics seamlessly. Backend API: https://health-analytics-platform.onrender.com',
       tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Docker', 'Python', 'RestAPI'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/sarahhuang1030-sketch/health-analytics-platform',
+      live: 'https://health-analytics-platform-frontend.onrender.com/',
       year: '2025'
     },
     {
-      id: 4,
+      id: 5,
+      title: 'Paws for Hope - Animal Rescue Website',
+      description: 'A responsive website for an animal rescue organization, featuring pet adoption listings, volunteer sign-ups, and donation integration to support animal welfare.',
+      tech: ['WordPress', 'HTML', 'CSS', 'JavaScript'],
+      github: null,
+      live: 'https://www.pawsforhope.org/',
+      year: 'Can\'t recall'
+    },
+     {
+      id: 6,
+      title: 'Borderless Film',
+      description: 'A dynamic website for a film production company, showcasing their portfolio, team, and services with an emphasis on visual storytelling and user engagement.',
+      tech: ['GoDaddy Website Builder', 'HTML', 'CSS', 'JavaScript'],
+      github: null,
+      live: 'https://www.borderlessfilm.com/',
+      year: 'Can\'t recall'
+    },
+
+    {
+      id: 7,
       title: 'AI Chatbot for Children Mobile App - Upcoming',
       description: 'Real-time AI-powered chatbot designed to chat with children and learning activities in an engaging manner.',
       tech: ['Figma', 'Icon sets', 'React', 'Next.js', 'ChatUI', 'Flutter', 'Node.js', 'LLM API', 'PostgreSQL', 'Render'],
-      github: '#',
-      live: '#',
+      github: null,
+      live: null,
       year: '2026'
     }
   ];
@@ -269,22 +297,39 @@ import Image from 'next/image';
                     </span>
                   ))}
                 </div>
+                
+                {/* make the github links and external links only shows up when there's an actual link */}
                 <div className="flex gap-4">
-                  <a href={project.github} className={`flex items-center gap-2 ${secondaryTextClass} hover:text-cyan-400 transition-colors`}>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center gap-2 ${secondaryTextClass} hover:text-cyan-400 transition-colors`}
+                  >
                     <Image
-                    src="/image/github.svg"
-                    alt="GitHub"
-                    width={20}
-                    height={20}
-                  />
+                      src="/image/github.svg"
+                      alt="GitHub"
+                      width={20}
+                      height={20}
+                    />
                     <span>Code</span>
                   </a>
-                  
-                  <a href={project.live} className={`flex items-center gap-2 ${secondaryTextClass} hover:text-cyan-400 transition-colors`}>
+                )}
+
+                {project.live && project.live !== '#' && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center gap-2 ${secondaryTextClass} hover:text-cyan-400 transition-colors`}
+                  >
                     <ExternalLink size={20} />
                     <span>Live</span>
                   </a>
-                </div>
+                )}
+              </div>
+
               </div>
             ))}
           </div>
