@@ -40,7 +40,7 @@ import Image from 'next/image';
       id: 3,
       title: 'Travel Expert Web App v2.0 (Team Project)',
       description: 'Web application that allow users to plan and book personalized travel itineraries seamlessly. I worked on Login and Registration page and the logic behind them for this group project.',
-      tech: ['Asp.NET', 'C#', 'PostgreSQL', 'Render'],
+      tech: ['Asp.NET', 'C#', 'PostgreSQL', 'Render', 'Docker'],
       github: 'https://github.com/sarahhuang1030-sketch/Thread-Project.git',
       live: 'https://thread-project-6z5z.onrender.com',
       year: '2025'
@@ -85,10 +85,9 @@ import Image from 'next/image';
   ];
 
   const skills = [
-    'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js',
-    'Python', 'MySQL', 'PostgreSQL', 'Git', 'GitHub', 'Docker',
-    'Bootstrap', 'Tailwind CSS', 'REST APIs', 'SSMS', 'C#', 'Java','Azure', 'APIs',
-    'HTML', 'Adobe Illustrator', 'Adobe Photoshop', 'Figma'
+    'HTML', 'Adobe Illustrator', 'Adobe Photoshop','Figma', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Wordpress',
+    'MySQL', 'PostgreSQL', 'Git', 'GitHub', 'Docker', 'Bootstrap', 'Tailwind CSS', 'JavaScript', 'Python',
+     'REST APIs', 'SSMS', 'C#', 'Java','Azure', 'APIs', 
   ];
 
   const experiences = [
