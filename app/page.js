@@ -39,10 +39,10 @@ import Image from 'next/image';
      {
       id: 3,
       title: 'Travel Expert Web App v2.0 (Team Project)',
-      description: 'Web application that allow users to plan and book personalized travel itineraries seamlessly',
-      tech: ['React', 'Node.js', 'MySQL', 'Javascript'],
-      github: 'https://github.com/sarahhuang1030-sketch/ThreadProjectV3.git',
-      live: 'https://travel-expert-website.onrender.com',
+      description: 'Web application that allow users to plan and book personalized travel itineraries seamlessly. I worked on Login and Registration page and the logic behind them for this group project.',
+      tech: ['Asp.NET', 'C#', 'PostgreSQL', 'Render'],
+      github: 'https://github.com/sarahhuang1030-sketch/Thread-Project.git',
+      live: 'https://thread-project-6z5z.onrender.com',
       year: '2025'
     },
      {
